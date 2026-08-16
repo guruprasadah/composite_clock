@@ -3,7 +3,7 @@ import esphome.config_validation as cv
 from esphome.components import time as time_
 from esphome.const import CONF_ID, CONF_TIME_ID
 
-CODEOWNERS = ["@your-github-handle"]
+CODEOWNERS = ["@guruprasadah"]
 DEPENDENCIES = ["time"]
 
 # This namespace must match the C++ namespace in composite_clock.h
