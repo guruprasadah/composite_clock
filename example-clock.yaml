@@ -37,7 +37,7 @@ time:
 external_components:
   - source:
       type: local
-      path: esphome/components
+      path: ./components
 
 composite_clock:
   id: my_clock
