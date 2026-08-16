@@ -1,5 +1,7 @@
 # composite_clock
 
+> Compatible only with the `arduino` framework under ESPHome. esp-idf build fails with an unclear include error.
+
 An ESPHome custom component that displays the current time — in 24-hour format,
 as large seven-segment digits centred on the screen — over ESP32 composite
 video, using (an updated personal fork of) the
@@ -32,6 +34,14 @@ external_components:
       url: https://github.com/guruprasadah/composite_clock
 ```
 ## Configuration
+
+(Mandatorily) switch to the arduino framework:
+```yaml
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+```
 
 ```yaml
 composite_clock:
