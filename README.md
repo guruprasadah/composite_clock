@@ -23,33 +23,14 @@ Plug the other end of the RCA cable into the yellow (video) jack of your TV or
 monitor. Select `mode: NTSC` or `mode: PAL` to match your region.
 
 ## Installation
-
-Copy the `esphome/components/composite_clock` folder into your ESPHome project
-so it sits next to your YAML config:
-
-```
-your-project/
-├── my-clock.yaml
-└── esphome/
-    └── components/
-        └── composite_clock/
-            ├── __init__.py
-            ├── composite_clock.h
-            └── composite_clock.cpp
-```
-
-Then reference it with `external_components`:
+Reference it with `external_components`:
 
 ```yaml
 external_components:
   - source:
-      type: local
-      path: esphome/components
+      type: git
+      url: https://github.com/guruprasadah/composite_clock
 ```
-
-The component automatically pulls in the `ESP32CompositeColorVideo` Arduino
-library from GitHub at build time, so no manual library installation is needed.
-
 ## Configuration
 
 ```yaml
