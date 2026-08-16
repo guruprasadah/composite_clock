@@ -2,8 +2,8 @@
 
 An ESPHome custom component that displays the current time — in 24-hour format,
 as large seven-segment digits centred on the screen — over ESP32 composite
-video, using the
-[ESP32CompositeColorVideo](https://github.com/marciot/ESP32CompositeColorVideo)
+video, using (an updated personal fork of) the
+[ESP32CompositeColorVideo](https://github.com/guruprasadah/ESP32CompositeColorVideo)
 library by Marcio Teixeira (a colour-capable fork of bitluni's
 ESP32CompositeVideo).
 
@@ -17,7 +17,7 @@ For an Adafruit HUZZAH32 (or any ESP32 with a DAC):
 | ESP32 pin | RCA plug |
 |-----------|----------|
 | `GND`     | outer barrel |
-| `A1` (DAC1) | centre pin |
+| `GPIO25` (DAC1) | centre pin |
 
 Plug the other end of the RCA cable into the yellow (video) jack of your TV or
 monitor. Select `mode: NTSC` or `mode: PAL` to match your region.
