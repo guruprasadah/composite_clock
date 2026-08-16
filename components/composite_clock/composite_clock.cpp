@@ -5,8 +5,8 @@
 // ESP32CompositeColorVideo library (Arduino library pulled in via cg.add_library).
 // The library is not registered as a PlatformIO component with a clean include
 // path, so we add its "src" directory explicitly.
-#include "src/CompositeGraphics.h"
-#include "src/CompositeColorOutput.h"
+#include "CompositeGraphics.h"
+#include "CompositeColorOutput.h"
 
 namespace esphome {
 namespace composite_clock {
